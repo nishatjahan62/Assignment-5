@@ -1,1 +1,1 @@
-console.log("Hii");
+document.querySelector(#mainSection)

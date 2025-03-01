@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        /* font */
+        --font-poppins: Poppins, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f4f7ff] font-poppins">
+    <header>
+      <!-- Navbar -->
+      <nav
+        id="navbar"
+        class="font-poppins bg-white flex justify-between items-center mx-5 mt-2 sm:mt-5 md:mx-[50px] lg:mx-[70px] px-3 py-1 sm:px-4 py-2 rounded-xl"
+      >
+        <div class="flex gap-2 items-center">
+          <img src="./assets/logo.png" alt="a logo of Devboard webpage" />
+          <p class="text-[#00303C] font-light text-3xl">
+            Dev<span class="font-bold">Board</span>
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <button
+            class="bg-[#3f58fd] rounded-md text-white py-2 px-3 font-medium font-poppins"
+          >
+            Back to Desk
+          </button>
+        </div>
+      </nav>
+    </header>
+    <h2 class="text-center font-bold text-2xl pt-8 pb-8">Blogs</h2>
+    <!-- Question Ans Section -->
+    <section class="mx-[70px] flex flex-col gap-9 mb-9 ">
+      <div class="rounded-xl bg-white py-5 px-5">
+        <div class="py-4 px-5 font-bold text-xl  ">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </div>
+        <div class="border-t-2 border-dashed border-blue-200"></div>
+        <div class="py-4 px-5 font-bold text-xl ">
+         <div> Answer:
+          <span class="font-light text-lg "
+            > There are some different ways to select an element in DOM. <br />
+            <br> 
+            <span class="font-normal">i. getElementById :</span> if we want to
+            select only one element we use getElementById('the id name of the
+            element') <br />[Ex: getElementById('card-1')] <br />
+
+            <span class="font-normal"> ii. getElementsByClass :</span> if we
+            want to select some elements with same class name we use
+            getElementsByClassName('the class name of the elements') <br />[Ex:
+            getElementsByClass('btn-primary')] <br />
+
+            <span class="font-normal"> iii. getElementsTagName :</span> if we
+            want to select elements by their tag name we use
+            getElementsByTagName('the tag name of the element') <br />
+            [Ex: getElementsByTagName('p')] <br />
+
+            <span class="font-normal">iv. querySelector : </span>by
+            querySelector we will find the first element which will match the
+            selector. for this we use <br />
+            if it is id querySelector(#id name) <br />if it is class
+            querySelector(.class name) <br />[Ex: querySelector('#the id name')]
+            <br />
+
+            <span class="font-normal"> v. querySelectorAll :</span> by
+            querySelectorAll we will find all the elements which will match the
+            selector. for this we use same as querySelector <br />
+            if it is id querySelector(#id name) <br />if it is class
+            querySelector(.class name) <br />[Ex: querySelector('.the class
+            name')]
+          </span>
+        </div>
+      </div>
+      </div>
+      <div class="bg-white rounded-xl py-5 px-5">
+        <div class="py-4 px-5 font-bold text-xl">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </div>
+        <div class="border-t-2 border-dashed border-blue-200"></div>
+        <div class="py-4 px-5 font-bold text-xl">
+          Answer:
+          <span class="font-light text-lg">
+            if we want to access the content of the html with DOM we use
+            innerHTML , innerText and textContent. but there are few difference
+            among them . <br /> <br>
+            <span class="font-normal">**innerHTML:</span>
+            BY innerHTML we can access the content of the element with the tag,
+            texts etc. and the output will be just like vscode"s code. <br />
+            <span class="font-normal">**innerText:</span> By innerText we can
+            access only the visible text content of the elements and it will not
+            includes any styles. and the output will only show the text. <br />
+            <span class="font-normal">**textContent:</span> By Text content we
+            can access the text content like innerText but it will also shows
+            the hidden texts. and the output will be both visible and hidden
+            texts.
+          </span>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl py-5 px-5">
+        <div class="py-4 px-5 font-bold text-xl">
+          Question-3: What is event delegation in the DOM?
+        </div>
+        <div class="border-t-2 border-dashed border-blue-200"></div>
+        <div class="py-4 px-5 font-bold text-xl">
+          Answer:
+          <span class="font-light">
+            <span class="font-medium"> Event delegation</span> is a way to add
+            event listener to a parent element instead of adding too many event
+            listener to each child. In this way, we add one event listener to
+            the parent and that event listener handle the child's event by event
+            bubbling process.</span
+          >
+        </div>
+      </div>
+      <div class="bg-white rounded-xl py-5 px-5">
+        <div class="py-4 px-5 font-bold text-xl">
+          Question-4: What is event bubbling in the DOM?
+        </div>
+        <div class="border-t-2 border-dashed border-blue-200"></div>
+        <div class="py-4 px-5 font-bold text-xl">
+          Answer:
+          <span class="font-light">
+            <span class="font-normal">Event bubbling</span>
+            is a technique of event propagation where an event start from the
+            target element to the parent. It first start from the element where
+            the event is happening and move (bubbles up) to the parent then
+            parent's parent and so on.
+          </span>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl py-5 px-5">
+        <div class="py-4 px-5 font-bold text-xl">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </div>
+        <div class="border-t-2 border-dashed border-blue-200"></div>
+        <div class="py-4 px-5 font-bold text-xl">
+          Answer:
+          <span class="font-light">
+             <span >In DOM we can create new elements, add elements also can remove
+              elements. this is how we can do these</span> <br /> <br>
+            <span class="font-normal">i. Create new elements </span>
+            For create a new element we use .createElement("name of the tag")
+            <br />
+            [Ex: const newElement=document.createElement('p')] <br />
+
+            <span class="font-normal">ii. Add new elements </span>
+            For add element we use .appendChild(the element) <br />
+            [Ex: container.appendChild(newElement)]
+            <br />
+            <span class="font-normal">iii. Remove elements </span> to remove
+            element we use .remove(). [Ex: newElement.remove()]
+          </span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
