@@ -8,7 +8,7 @@ function dynamicDate() {
   const day = currentDate.getDate();
   const year = currentDate.getFullYear();
   document.getElementById("dayName").textContent = dayName + ",";
-  document.getElementById("date").textContent = month +  " " +  day + " " + year;
-  
+  document.getElementById("date").textContent = month + " " + day + " " + year;
 }
-window.onload = dynamicDate;
+dynamicDate()
+setInterval(dynamicDate, 60000);

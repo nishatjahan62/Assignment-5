@@ -51,13 +51,11 @@
             class="bg-primary flex justify-between items-center gap-3 px-4 rounded-[32px]"
           >
             <img src="./assets/checkbox.png" alt="a checkbox" />
-            <span class="font-poppins font-bold text-2xl">23</span>
+            <span id="navBtn" class="font-poppins font-bold text-2xl">23</span>
           </button>
-          <button id="theme-btn" class="bg-primary px-3 py-3 rounded-full" >
-          <img 
-            src="./assets/theme-btn.png"
-            alt=""
-          /></button>
+          <button id="theme-btn" class="bg-primary px-3 py-3 rounded-full">
+            <img src="./assets/theme-btn.png" alt="" />
+          </button>
         </div>
       </nav>
     </header>
@@ -75,14 +73,12 @@
           <div
             class="flex justify-center items-center bg-primary px-1 py-5.5 rounded-lg gap-3 w-[220px] h-[100px]"
           >
-            <div class="bg-white px-4 py-4 rounded-full"><img
-              src="./assets/checkbox.png"
-              alt="A logo of checkbox"
-              
-            /></div>
+            <div class="bg-white px-4 py-4 rounded-full">
+              <img src="./assets/checkbox.png" alt="A logo of checkbox" />
+            </div>
             <p class="font-light text-base">
               Task Assigned <br />
-              <span class="font-bold text-lg">05</span>
+              <span id="taskNum" class="font-bold text-lg">06</span>
             </p>
           </div>
 
@@ -90,13 +86,11 @@
             id="discoverCard"
             class="flex justify-start items-center bg-linear-to-l from-[#98A5F8] to-[#3D57FD] rounded-xl px-6 py-3 w-[410px] h-[100px] gap-4"
           >
-    
             <img src="./assets/board.png" alt="a board" />
             <p class="text-white text-xl">
               Discover Something <br />
               New Today!
             </p>
-            
           </div>
 
           <div
@@ -107,7 +101,12 @@
             </div>
 
             <p id="currentDate" class="font-light text-lg">
-              <span id="dayName">Wed,</span> <br /><span id="date" class="font-bold"> jul 28 2025</span>
+              <span id="dayName">Wed,</span> <br /><span
+                id="date"
+                class="font-bold"
+              >
+                jul 28 2025</span
+              >
             </p>
           </div>
         </div>
@@ -141,7 +140,7 @@
                 Deadline <br />
                 <span class="font-medium">21 March 2025</span>
               </p>
-              <button class="btn">Completed</button>
+              <button id="btn1" class="btn">Complete</button>
             </div>
           </div>
           <div
@@ -167,7 +166,7 @@
                 Deadline <br />
                 <span class="font-medium">21 March 2025</span>
               </p>
-              <button class="btn">Completed</button>
+              <button id="btn2" class="btn">Complete</button>
             </div>
           </div>
           <div
@@ -194,7 +193,7 @@
                 Deadline <br />
                 <span class="font-medium">21 March 2025</span>
               </p>
-              <button class="btn">Completed</button>
+              <button id="btn3" class="btn">Complete</button>
             </div>
           </div>
 
@@ -222,7 +221,7 @@
                 Deadline <br />
                 <span class="font-medium">21 March 2025</span>
               </p>
-              <button class="btn">Completed</button>
+              <button id="btn4" class="btn">Complete</button>
             </div>
           </div>
           <div
@@ -248,7 +247,7 @@
                 Deadline <br />
                 <span class="font-medium">21 March 2025</span>
               </p>
-              <button class="btn">Completed</button>
+              <button id="btn5" class="btn">Complete</button>
             </div>
           </div>
           <div
@@ -275,7 +274,7 @@
                 Deadline <br />
                 <span class="font-medium">21 March 2025</span>
               </p>
-              <button class="btn">Completed</button>
+              <button id="btn6" class="btn">Complete</button>
             </div>
           </div>
         </div>
@@ -290,6 +289,7 @@
           <p>Activity Log</p>
         </div>
         <button
+          id="clearHistoryBtn"
           class="bg-secondary rounded-md text-white py-2 font-medium font-poppins; mx-15"
         >
           Clear History
@@ -297,10 +297,68 @@
         <div
           class="border-t-2 border-dashed border-[#b6bef5] border-opacity-20"
         ></div>
+
+        <!-- complete-btn-massage hidden Section  -->
+        <div id="card-1-msg" class="hidden">
+          <p
+            class="text-[#000000] font-light bg-primary mx-3 py-2 px-2 rounded-lg text-base mb-2"
+          >
+            You have completed Fix Mobile Button Issue at
+            <span id="msg-1-time"></span>
+          </p>
+        </div>
+
+        <div id="card-2-msg" class="hidden">
+          <p
+            class="text-[#000000] font-light bg-primary mx-3 py-2 px-2 rounded-lg text-base mb-2"
+          >
+            You have completed Add Dark Mode at <span id="msg-2-time"></span>
+          </p>
+        </div>
+
+        <div id="card-3-msg" class="hidden">
+          <p
+            class="text-[#000000] font-light bg-primary mx- py-2 px-2 rounded-lg text-base mb-2"
+          >
+            You have completed Optimize Home page at
+            <span id="msg-3-time"></span>
+          </p>
+        </div>
+
+        <div id="card-4-msg" class="hidden">
+          <p
+            class="text-[#000000] font-light bg-primary mx-3 py-2 px-2 rounded-lg text-base mb-2"
+          >
+            You have completed Add new emoji 🤲 at
+            <span id="msg-4-time"></span>
+          </p>
+        </div>
+
+        <div id="card-5-msg" class="hidden">
+          <p
+            class="text-[#000000] font-light bg-primary mx-3 py-2 px-2 rounded-lg text-base mb-2"
+          >
+            You have completed Integrate OpenAI API at
+            <span id="msg-5-time"></span>
+          </p>
+        </div>
+
+        <div id="card-6-msg" class="hidden">
+          <p
+            class="text-[#000000] font-light bg-primary mx-3 py-2 px-2 rounded-lg text-base mb-2"
+          >
+            You have completed Improve Job searching at
+            <span id="msg-6-time"></span>
+          </p>
+        </div>
       </section>
+
+      >
     </main>
     <script src="./script/discoverCard.js"></script>
     <script src="./script/bgColorChange.js"></script>
     <script src="./script/currentDate.js"></script>
+    <script src="./script/completeBtn.js"></script>
+    <script src="./script/clearHistory.js"></script>
   </body>
 </html>
