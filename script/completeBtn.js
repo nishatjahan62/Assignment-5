@@ -19,6 +19,8 @@ document.getElementById("btn1").addEventListener("click", function () {
   const currentTime = new Date().toLocaleTimeString();
 
   document.getElementById("msg-1-time").textContent = currentTime;
+
+  finalAlert();
 });
 
 // Button-2
@@ -39,8 +41,10 @@ document.getElementById("btn2").addEventListener("click", function () {
   document.getElementById("card-2-msg").style.display = "block";
 
   // dynamic time of massage appearing
- const currentTime = new Date().toLocaleTimeString();
+  const currentTime = new Date().toLocaleTimeString();
   document.getElementById("msg-2-time").textContent = currentTime;
+
+  finalAlert();
 });
 
 // Button-3
@@ -63,6 +67,8 @@ document.getElementById("btn3").addEventListener("click", function () {
   // dynamic time of massage appearing
   const currentTime = new Date().toLocaleTimeString();
   document.getElementById("msg-3-time").textContent = currentTime;
+
+  finalAlert();
 });
 
 // Button-4
@@ -85,6 +91,8 @@ document.getElementById("btn4").addEventListener("click", function () {
   // dynamic time of massage appearing
   const currentTime = new Date().toLocaleTimeString();
   document.getElementById("msg-4-time").textContent = currentTime;
+
+  finalAlert();
 });
 
 // Button-5
@@ -107,6 +115,8 @@ document.getElementById("btn5").addEventListener("click", function () {
   // dynamic time of massage appearing
   const currentTime = new Date().toLocaleTimeString();
   document.getElementById("msg-5-time").textContent = currentTime;
+
+  finalAlert();
 });
 
 // Button-6
@@ -129,6 +139,8 @@ document.getElementById("btn6").addEventListener("click", function () {
   // dynamic time of massage appearing
   const currentTime = new Date().toLocaleTimeString();
   document.getElementById("msg-6-time").textContent = currentTime;
+
+  finalAlert();
 });
 
 function changeNumber() {
@@ -144,4 +156,10 @@ function changeNumber() {
   }
 }
 
-
+let finalAlertClick = 0;
+function finalAlert() {
+  finalAlertClick++;
+  if (finalAlertClick === 6) {
+    alert("congrats!!! You have completed all the current task");
+  }
+}
