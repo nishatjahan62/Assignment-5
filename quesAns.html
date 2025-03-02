@@ -33,8 +33,9 @@
             Dev<span class="font-bold">Board</span>
           </p>
         </div>
-        <div class="flex gap-3">
+        <div>
           <button
+            id="backToDesk"
             class="bg-[#3f58fd] rounded-md text-white py-2 px-3 font-medium font-poppins"
           >
             Back to Desk
@@ -44,48 +45,50 @@
     </header>
     <h2 class="text-center font-bold text-2xl pt-8 pb-8">Blogs</h2>
     <!-- Question Ans Section -->
-    <section class="mx-[70px] flex flex-col gap-9 mb-9 ">
+    <section class="mx-[70px] flex flex-col gap-9 mb-9">
       <div class="rounded-xl bg-white py-5 px-5">
-        <div class="py-4 px-5 font-bold text-xl  ">
+        <div class="py-4 px-5 font-bold text-xl">
           Question-1: What are the different ways to select an element in the
           DOM?
         </div>
         <div class="border-t-2 border-dashed border-blue-200"></div>
-        <div class="py-4 px-5 font-bold text-xl ">
-         <div> Answer:
-          <span class="font-light text-lg "
-            > There are some different ways to select an element in DOM. <br />
-            <br> 
-            <span class="font-normal">i. getElementById :</span> if we want to
-            select only one element we use getElementById('the id name of the
-            element') <br />[Ex: getElementById('card-1')] <br />
+        <div class="py-4 px-5 font-bold text-xl">
+          <div>
+            Answer:
+            <span class="font-light text-lg">
+              There are some different ways to select an element in DOM. <br />
+              <br />
+              <span class="font-normal">i. getElementById :</span> if we want to
+              select only one element we use getElementById('the id name of the
+              element') <br />[Ex: getElementById('card-1')] <br />
 
-            <span class="font-normal"> ii. getElementsByClass :</span> if we
-            want to select some elements with same class name we use
-            getElementsByClassName('the class name of the elements') <br />[Ex:
-            getElementsByClass('btn-primary')] <br />
+              <span class="font-normal"> ii. getElementsByClass :</span> if we
+              want to select some elements with same class name we use
+              getElementsByClassName('the class name of the elements')
+              <br />[Ex: getElementsByClass('btn-primary')] <br />
 
-            <span class="font-normal"> iii. getElementsTagName :</span> if we
-            want to select elements by their tag name we use
-            getElementsByTagName('the tag name of the element') <br />
-            [Ex: getElementsByTagName('p')] <br />
+              <span class="font-normal"> iii. getElementsTagName :</span> if we
+              want to select elements by their tag name we use
+              getElementsByTagName('the tag name of the element') <br />
+              [Ex: getElementsByTagName('p')] <br />
 
-            <span class="font-normal">iv. querySelector : </span>by
-            querySelector we will find the first element which will match the
-            selector. for this we use <br />
-            if it is id querySelector(#id name) <br />if it is class
-            querySelector(.class name) <br />[Ex: querySelector('#the id name')]
-            <br />
+              <span class="font-normal">iv. querySelector : </span>by
+              querySelector we will find the first element which will match the
+              selector. for this we use <br />
+              if it is id querySelector(#id name) <br />if it is class
+              querySelector(.class name) <br />[Ex: querySelector('#the id
+              name')]
+              <br />
 
-            <span class="font-normal"> v. querySelectorAll :</span> by
-            querySelectorAll we will find all the elements which will match the
-            selector. for this we use same as querySelector <br />
-            if it is id querySelector(#id name) <br />if it is class
-            querySelector(.class name) <br />[Ex: querySelector('.the class
-            name')]
-          </span>
+              <span class="font-normal"> v. querySelectorAll :</span> by
+              querySelectorAll we will find all the elements which will match
+              the selector. for this we use same as querySelector <br />
+              if it is id querySelector(#id name) <br />if it is class
+              querySelector(.class name) <br />[Ex: querySelector('.the class
+              name')]
+            </span>
+          </div>
         </div>
-      </div>
       </div>
       <div class="bg-white rounded-xl py-5 px-5">
         <div class="py-4 px-5 font-bold text-xl">
@@ -98,7 +101,8 @@
           <span class="font-light text-lg">
             if we want to access the content of the html with DOM we use
             innerHTML , innerText and textContent. but there are few difference
-            among them . <br /> <br>
+            among them . <br />
+            <br />
             <span class="font-normal">**innerHTML:</span>
             BY innerHTML we can access the content of the element with the tag,
             texts etc. and the output will be just like vscode"s code. <br />
@@ -153,8 +157,12 @@
         <div class="py-4 px-5 font-bold text-xl">
           Answer:
           <span class="font-light">
-             <span >In DOM we can create new elements, add elements also can remove
-              elements. this is how we can do these</span> <br /> <br>
+            <span
+              >In DOM we can create new elements, add elements also can remove
+              elements. this is how we can do these</span
+            >
+            <br />
+            <br />
             <span class="font-normal">i. Create new elements </span>
             For create a new element we use .createElement("name of the tag")
             <br />
@@ -170,5 +178,6 @@
         </div>
       </div>
     </section>
+    <script src="./script/backToDesk.js"></script>
   </body>
 </html>
